@@ -1,0 +1,13 @@
+.row .col-md-offset-2 .text-primary {
+    text-align: center;
+}
+
+.row .col-md-12 .payment-errors {
+    color: red;
+    margin-top:10px;
+}
+
+.form-group .table-condensed .cart_price p span {
+    text-decoration: line-through;
+    margin-right: 10px;
+}

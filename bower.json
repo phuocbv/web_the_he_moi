@@ -1,0 +1,37 @@
+{
+  "name": "ishopee",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "yoursite.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "ckeditor": "^4.5.11",
+    "firebase": "^3.6.0",
+    "metisMenu": "^2.5.2",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "sweetalert2": "^6.1.0",
+    "jquery-timeago": "^1.5.3",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.43",
+    "bootstrap-datepicker": "^1.6.4",
+    "bootstrap-star-rating": "^4.0.1",
+    "jquery.easyPaginate": "https://github.com/st3ph/jquery.easyPaginate.git",
+    "datatables.net": "^1.10.13",
+    "datatables.net-dt": "^1.10.13",
+    "parsleyjs": "^2.6.0",
+    "stripe.js": "https://js.stripe.com/v2/",
+    "blockUI": "*",
+    "simplePagination.js": "jquery.simplePagination#*"
+  }
+}

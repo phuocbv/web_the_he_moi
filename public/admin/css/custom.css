@@ -1,0 +1,19 @@
+#page-wrapper {
+    margin-top: 50px;
+}
+.colum {
+    text-align: center;
+}
+
+.sub-category h3 {
+    color: #ff00cc;
+}
+
+i.fa {
+    cursor: pointer;
+}
+
+.blockUI.blockMsg.blockPage {
+    background: rgba(255, 255, 255, 0) !important;
+    border: 3px solid rgba(170, 170, 170, 0) !important;
+}

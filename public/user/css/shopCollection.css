@@ -1,0 +1,71 @@
+.block-left-info-shop {
+    background: #fff;
+    padding: 0 0 10px 0;
+}
+
+.block-left-info-shop .name-shop {
+    color: #fff !important;
+}
+
+.block-left-info-shop .image-background {
+    height: 200px;
+    color: #fff;
+}
+
+.block-left-info-shop .image-background .image-avatar {
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.block-left-info-shop .image-background .block-info {
+    height: 200px;
+    background: rgba(0,0,0,.4);
+    padding-top: 20px;
+}
+
+.block-product-category .image-product {
+    width: 100%;
+    height: 130px;
+}
+
+.form-control.number {
+    border-radius: 0; 
+}
+
+.list-collection .item-collection {
+    padding: 10px 0 5px 0;
+    border-bottom: 1px solid #a5a5a5;
+    font-size: 16px;
+    color: #656565;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid red;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.nav.nav-tabs.border-shadow-bottom {
+    background: #fff;
+    width: 100%;
+    border: none;
+}
+
+.tab-content.border-shadow-bottom {
+    background: #fff;
+    margin-top: 10px;
+}

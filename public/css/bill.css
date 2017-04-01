@@ -1,0 +1,37 @@
+.col-md-8.col-md-offset-2 {
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.bill-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.bill-title h3 {
+    color: #a52323;
+}
+
+.bill-info {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.bill-info table {
+    width: 100%;
+    margin: 10px;
+}
+
+.bill-sub-title {
+    padding-top: 10px;
+}
+
+.bill-sub-title h4 {
+    color: #a52323;
+}
+
+.sub-title {
+    width: 40%;
+}

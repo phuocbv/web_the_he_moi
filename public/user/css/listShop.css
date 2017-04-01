@@ -1,0 +1,46 @@
+.block-product-shop:hover {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+}
+
+.block-product-shop {
+    background: #fff;
+    padding: 0px;
+    margin-bottom: 20px;
+    color: #868686;
+}
+
+.block-product-shop .img-shop {
+    width: 100%;
+    height: 200px;
+}
+
+.block-product-shop .caption {
+    height: 150px;
+}
+
+.block-product-shop .product-name-shop {
+    padding-left: 10px;
+    height: 40px;
+}
+
+.block-product-shop .price-and-number {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.block-product-shop .price-and-number span.product-in-stock {
+    position: absolute;
+    right: 15px;
+}
+
+.block-product-shop .buy-and-comment {
+    margin-top: 15px;
+    padding-left: 10px
+}
+
+.block-product-shop .buy-and-comment .comment {
+    position: absolute;
+    right: 15px;
+}

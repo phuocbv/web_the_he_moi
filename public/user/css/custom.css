@@ -1,0 +1,178 @@
+a, a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+}
+
+.background-while {
+    background: #fff;
+}
+
+.wid100 {
+    width: 100%;
+}
+
+.wid50 {
+    width: 50%;
+}
+
+.height-120p {
+    height: 120px;
+}
+
+.height-140p {
+    height: 140px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.margin-zero {
+    margin: 0 !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.padding-left-2d {
+    margin-left: 2px;
+}
+
+.padding-right-2d {
+    margin-right: 2px;
+}
+
+.padding-top-bottom-20 {
+    padding: 20px 0;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-right-5 {
+    padding-right: 5px; 
+}
+
+.padding-zero {
+    padding: 0 !important;
+}
+
+.speace20 {
+    display: block;
+    height: 20px;
+}
+
+.speace50 {
+    display: block;
+    width: 100%;
+    height: 50px
+}
+
+.speace10 {
+    display: block;
+    width: 100%;
+    height: 10px
+}
+
+.border-shadow-right-bottom {
+    -webkit-box-shadow: 0 2px 5px 1px rgba(155, 155, 155, 0.9);
+    -moz-box-shadow: 0 2px 5px 1px rgba(155, 155, 155, 0.9);
+    box-shadow: 0 2px 5px 1px rgba(155, 155, 155, 0.9);
+}
+
+.border-shadow-bottom {
+    -webkit-box-shadow: 0 2px .1rem 0 rgba(0,0,0,.13);
+    -moz-box-shadow: 0 2px .1rem 0 rgba(0,0,0,.13);
+    box-shadow: 0 2px .1rem 0 rgba(0,0,0,.13);
+}
+
+.blockUI.blockMsg.blockPage {
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.cart_info div {
+    float: right; 
+    margin-right: 100px;
+}
+
+.cart_info .table-condensed thead {
+    background-color: #a52323;
+    color: white;
+}
+
+.cart_info .table-condensed .cart_price p span {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.colum {
+    text-align: center;
+}
+
+.edit-collection {
+    margin: 20px 30px;
+}
+
+.fa.fa-fw {
+    cursor: pointer;
+}

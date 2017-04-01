@@ -1,0 +1,67 @@
+#logout-form {
+    display: none;
+}
+
+.navbar-static-top {
+    background-color: #a53343;
+}
+
+#app .navbar-static-top .container .navbar-header a {
+    color: #9d9b9b;
+    font-weight: bold;
+}
+
+#app .navbar-static-top .container .navbar-header a:hover {
+    color: #fff;
+}
+
+#app-navbar-collapse ul li a {
+    color: #9d9b9b;
+    font-weight: bold;
+}
+
+#app-navbar-collapse ul li a:hover {
+    color: #fff;
+}
+
+#bs-example-navbar-collapse-1 ul li a {
+    color: #9d9b9b;
+    font-weight: bold;
+}
+
+#bs-example-navbar-collapse-1 ul li a:hover {
+    color: #fff;
+}
+
+#logout {
+    color: #9d9b9b;
+    font-weight: bold;
+}
+
+#logout:hover {
+    color: #fff;
+}
+
+#username {
+    color: #9d9b9b;
+    font-weight: bold;
+}
+
+#username:hover {
+    color: #fff;
+}
+
+#bound {
+    height: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
+    border: 1px solid #000;
+    padding: 0;
+    display: none;
+}
+
+#progress {
+    height: 18px;
+    background: #97ca65;
+    width: 0%
+}
