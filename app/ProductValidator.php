@@ -19,5 +19,8 @@ class ProductValidator extends LaravelValidator
             'category_id' => 'required|exists:categories,id',
             'shop_id' => 'required|exists:shops,id'
         ],
+        ValidatorInterface::RULE_UPDATE => [
+
+        ],
     ];
 }
