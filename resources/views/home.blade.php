@@ -72,13 +72,16 @@
             @endforeach
         </div>
     </div>
-    <script type="text/javascript" src="{{ asset('user/js/home.js') }}"></script>
 @endsection
 
 @section('script')
     <script src="{{ asset('js/addcart.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('user/js/home.js') }}"></script>
     <script>
         var addCart = new addcart();
-        addCart.init('.btn-add-cart');
+        var home = new home({addCart: addCart});
+        $(function() {
+            home.init();
+        });
     </script>
 @endsection
