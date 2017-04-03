@@ -10,4 +10,6 @@ interface ProductRepositoryInterface extends RepositoryInterface
     public function searchProductByName($name, $currentPage, $limit);
 
     public function getSimilarProduct(Product $product, $take);
+
+    public function storeProduct($data = []);
 }

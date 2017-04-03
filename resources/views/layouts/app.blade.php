@@ -13,6 +13,7 @@
         <script type="text/javascript" src="{{ asset('bower_components/metisMenu/dist/metisMenu.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bower_components/bootstrap-star-rating/js/star-rating.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bower_components/simplePagination.js/jquery.simplePagination.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bower_components/pusher-js/dist/web/pusher.js') }}"></script>
         <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.css') }}">
         <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}">
@@ -36,6 +37,11 @@
     <script src="{{ asset('/js/myapp.js') }}"></script>
     <script>
         var myApp = new myApp;
-        myApp.init();
+        (function () {
+            myApp.init({
+                pusher_key: '{{ config('broadcasting.connections.pusher.key') }}',
+                chanel: '{{ config('event.chanel.inform_new_product') }}'
+            });
+        })();
     </script>
 </html>

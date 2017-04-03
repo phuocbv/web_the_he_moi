@@ -72,30 +72,43 @@ class ProductController extends Controller
         $data = $request->only('name', 'category_id', 'price', 'code',
             'quantity', 'discount', 'description', 'status', 'collection', 'images');
         $data = array_collapse([$data, ['shop_id' => Auth::user()->shop->id]]);
-        try {
-            if ($this->productValidator->with($data)->passesOrFail(ValidatorInterface::RULE_CREATE)) {
-                DB::beginTransaction();
-                $product = $this->productRepository->create($data);
-                foreach ($data['images'] as $key => $value) {
-                    $image = ['product_id' => $product->id, 'url' => $value];
-                    $this->imageRepository->create($image);
-                }
-                $productCollection = ['product_id' => $product->id, 'collection_id' => $data['collection']];
-                if ($this->productCollectionValidator->with($productCollection)->passesOrFail()) {
-                    $this->productCollectionRepository->create($productCollection);
-                    DB::commit();
+        $product =$this->productRepository->storeProduct($data);
 
-                    return response()->json(['status' => 'success', 'data' => $product]);
-                }
-                DB::rollback();
-            }
-        } catch (ValidatorException $e) {
-            DB::rollback();
-        } catch (Exception $e) {
-            DB::rollback();
+        if (!$product) {
+            return response()->json([
+                'status' => 'error',
+            ]);
         }
 
-        return response()->json(['status' => 'error']);
+        return response()->json([
+            'status' => 'success',
+            'data' => $product,
+        ]);
+
+//        try {
+//            if ($this->productValidator->with($data)->passesOrFail(ValidatorInterface::RULE_CREATE)) {
+//                DB::beginTransaction();
+//                $product = $this->productRepository->create($data);
+//                foreach ($data['images'] as $key => $value) {
+//                    $image = ['product_id' => $product->id, 'url' => $value];
+//                    $this->imageRepository->create($image);
+//                }
+//                $productCollection = ['product_id' => $product->id, 'collection_id' => $data['collection']];
+//                if ($this->productCollectionValidator->with($productCollection)->passesOrFail()) {
+//                    $this->productCollectionRepository->create($productCollection);
+//                    DB::commit();
+//
+//                    return response()->json(['status' => 'success', 'data' => $product]);
+//                }
+//                DB::rollback();
+//            }
+//        } catch (ValidatorException $e) {
+//            DB::rollback();
+//        } catch (Exception $e) {
+//            DB::rollback();
+//        }
+//
+//        return response()->json(['status' => 'error']);
     }
 
     public function destroy($id)
